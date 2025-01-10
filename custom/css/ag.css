@@ -1,0 +1,125 @@
+#black {
+    color: black;
+    font-size: 120%;
+}
+
+#red {
+    color: red;
+    font-size: 120%;
+}
+
+#blue{
+    color: DodgerBlue;
+    font-size: 120%;
+}
+
+#centro{
+    display: block; /*usado por causa de ser uma célula de uma tabela*/
+    text-align: center;
+}
+
+/*Utilizado custom table para modificar o formato das tables inteiras*/
+.custom-table 
+{
+    border-collapse: collapse;
+    width: 100%;
+    background-color: #f9f9f9;
+}
+
+.custom-table th, .custom-table td 
+{
+    border: 1px solid #000;
+    padding: 8px;
+    text-align: center;
+    vertical-align: middle;
+}
+.custom-table thead 
+{
+    background-color: #3e3e3e;
+    color: #ffffff;
+}
+.custom-table td 
+{
+    transition: background-color 0.3s ease;
+}
+
+.custom-table td:hover 
+{
+    background-color: #cce7ff;
+}
+/*Para colorir uma parte da tabela*/
+.id_color 
+{
+    background-color: #374a6638;
+}
+/*Para colorir uma table em expecifico que não tenha argumentos para facilitar procura*/
+#NoArgumentsColor 
+{
+    background-color: #e3d4ff;
+}
+a {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    color: blue; /* Changed to blue */
+    text-decoration: none;
+    font-size: inherit;
+    font-family: inherit;
+}
+
+a:hover {
+    color: #0056b3; /* Color when hovered */
+}
+
+a:active {
+    color: #004085; /* Color when active (clicked) */
+}
+
+a:visited {
+    color: blue; /* Changed to blue for visited links */
+}
+
+/*Caso queremos alguma box feita para tudo oque seja algo para voltar atrás ou algo do genéro*/
+#retornar 
+{
+    color: white;
+    font-size: 120%;
+    background-color: red;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+#retornar:hover
+{
+    background-color: #d32f2f;
+    transform: scale(1.05);
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2);
+}
+#retornar:focus, #InsertOrSimilar:focus 
+{
+    outline: 3px solid #ffa500;
+}
+/*Caso queremos alguma box que é denominada como correto, ou continuar (associado como um 'next')*/
+#InsertOrSimilar 
+{
+    color: white;
+    font-size: 120%;
+    background-color: #4CAF50;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+#InsertOrSimilar:hover 
+{
+    background-color: #45a049; 
+    transform: scale(1.05);
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2);
+}
